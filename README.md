@@ -3,8 +3,6 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=studentofstars&label=Profile%20views&color=0e75b6&style=flat" alt="studentofstars" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=studentofstars" alt="studentofstars" /></a> </p>
-
 - 🌱 I’m currently learning **machine learning and image processing**
 
 - 👨‍💻 All of my projects are available at [https://mrutyunjayaportfolio.vercel.app/?v=2](https://mrutyunjayaportfolio.vercel.app/?v=2)
