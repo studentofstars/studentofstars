@@ -1,53 +1,98 @@
 {
+  "coloredImage": true,
   "sections": [
     {
       "title": "{{username}}@github",
       "fields": [
-        { "key": "Name", "value": "Mrutyunjaya Muduli" },
-        { "key": "Role", "value": "Undergraduate Student" },
-        { "key": "Location", "value": "{{location}}" },
-        { "key": "Created", "value": "{{created}}" },
-        { "key": "Uptime", "value": "{{uptime}}" }
+        {
+          "key": "Name",
+          "value": "Mrutyunjaya Muduli"
+        },
+        {
+          "key": "Role",
+          "value": "Undergraduate Student"
+        },
+        {
+          "key": "Created",
+          "value": "{{created}}"
+        },
+        {
+          "key": "Uptime",
+          "value": "{{uptime}}"
+        }
       ]
     },
     {
       "title": "- Research",
       "fields": [
-        { "key": "Focus", "value": "ML, Image Processing" },
-        { "key": "Current", "value": "Code + Cosmos" },
-        { "key": "Portfolio", "value": "mrutyunjayaportfolio.vercel.app" }
+        {
+          "key": "Focus",
+          "value": "ML, Image Processing"
+        },
+        {
+          "key": "Current",
+          "value": "Code + Cosmos"
+        },
+        {
+          "key": "Portfolio",
+          "value": "mrutyunjayaportfolio.vercel.app"
+        }
       ]
     },
     {
       "title": "- Stack",
       "fields": [
-        { "key": "Languages", "value": "{{languages}}" },
-        { "key": "IDE", "value": "VSCode, Jupyter, Colab" },
-        { "key": "Tools", "value": "Git, Linux, OpenCV, NumPy" }
+        {
+          "key": "Languages",
+          "value": "{{languages}}"
+        },
+        {
+          "key": "IDE",
+          "value": "VSCode, Jupyter, Colab"
+        },
+        {
+          "key": "Tools",
+          "value": "Git, Linux"
+        }
       ]
     },
     {
-      "title": "- Hobbies",
+      "title": "- About & Contact",
       "fields": [
-        { "key": "Creative", "value": "Painting" },
-        { "key": "Outdoor", "value": "Cycling" },
-        { "key": "Interests", "value": "Astronomy, Space Tech" }
-      ]
-    },
-    {
-      "title": "- Contact",
-      "fields": [
-        { "key": "Email", "value": "mudulimrutyunjaya42@gmail.com" },
-        { "key": "Website", "value": "portfolio" },
-        { "key": "LinkedIn", "value": "mrutyunjaya-muduli" }
+        {
+          "key": "Interests",
+          "value": "Astronomy, Space Tech, Cycling"
+        },
+        {
+          "key": "Email",
+          "value": "mudulimrutyunjaya42@gmail.com"
+        }
       ]
     }
   ],
   "stats": {
     "title": "- GitHub Stats",
     "rows": [
-      { "left": { "key": "Repos", "value": "{{repos}}" }, "right": { "key": "Stars", "value": "{{stars}}" } },
-      { "left": { "key": "Following", "value": "{{following}}" }, "right": { "key": "Followers", "value": "{{followers}}" } }
+      {
+        "left": {
+          "key": "Repos",
+          "value": "{{repos}}"
+        },
+        "right": {
+          "key": "Stars",
+          "value": "{{stars}}"
+        }
+      },
+      {
+        "left": {
+          "key": "Commits",
+          "value": "{{commits}}"
+        },
+        "right": {
+          "key": "Followers",
+          "value": "{{followers}}"
+        }
+      },
       "loc"
     ]
   }
