@@ -59,15 +59,8 @@
       {
         "left": { "key": "Commits", "value": "{{commits}}" },
         "right": { "key": "Forks", "value": "{{forks}}" }
-      },
-      {
-        "left": { "key": "Issues", "value": "{{issues}}" },
-        "right": { "key": "PRs", "value": "{{prs}}" }
-      },
-      {
-        "left": { "key": "LOC", "value": "{{loc}}" },
-        "right": { "key": "Contrib", "value": "{{contributions}}" }
       }
+
     ]
   }
 }
