@@ -1,3 +1,5 @@
+
+![Neofetch Stats](https://neofetch-profile.vercel.app/api?username=studentofstars)
 <h1 align="center">Hi 👋, I'm Mrutyunjaya</h1>
 <h3 align="center">A passionate undergraduate student studying the universe through code.</h3>
 
