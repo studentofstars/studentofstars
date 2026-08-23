@@ -1,0 +1,43 @@
+name: Update Animated Neofetch Card
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'neofetch.json'
+      - 'scripts/**'
+
+permissions:
+  contents: write
+
+jobs:
+  update-card:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate Animated Neofetch Card
+        run: node scripts/generate-card.js
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/neofetch-animated.svg
+          if git diff --staged --quiet; then
+            echo "No changes in animated SVG card"
+          else
+            git commit -m "chore(auto): update animated neofetch card stats [skip ci]"
+            git push
+          fi

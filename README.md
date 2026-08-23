@@ -5,16 +5,9 @@
   <img src="https://komarev.com/ghpvc/?username=studentofstars&label=Profile%20views&color=0e75b6&style=flat" alt="studentofstars" />
 </p>
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://neofetch-profile.vercel.app/api?username=studentofstars&theme=github-dark&config=https%3A%2F%2Fraw.githubusercontent.com%2Fstudentofstars%2Fstudentofstars%2Fmain%2Fneofetch.json&v=2"
-  />
-  <img
-    alt="Neofetch style GitHub profile card"
-    src="https://neofetch-profile.vercel.app/api?username=studentofstars&theme=github-dark&config=https%3A%2F%2Fraw.githubusercontent.com%2Fstudentofstars%2Fstudentofstars%2Fmain%2Fneofetch.json&v=2"
-  />
-</picture>
+<p align="center">
+  <img src="./assets/neofetch-animated.svg" alt="Neofetch style GitHub profile card" width="100%" />
+</p>
 
 - 🌱 I’m currently learning **machine learning and image processing**
 - 👨‍💻 All of my projects are available at [mrutyunjayaportfolio.vercel.app](https://mrutyunjayaportfolio.vercel.app/?v=2)

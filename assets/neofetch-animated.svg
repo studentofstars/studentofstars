@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="Consolas,Monaco,monospace" width="985px" height="530px" font-size="16px">
+<style>
+@font-face {
+  src: local('Consolas'), local('Monaco'), local('monospace');
+  font-family: 'CardFont';
+  font-display: swap;
+}
+.key { fill: #ffa657; }
+.value { fill: #a5d6ff; }
+.addColor { fill: #3fb950; }
+.delColor { fill: #f85149; }
+.cc { fill: #616e7f; }
+text, tspan { white-space: pre; }
+
+/* --- Animation Styles --- */
+@keyframes cursorBlink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes promptGlow {
+  0%, 100% { fill: #c9d1d9; filter: drop-shadow(0 0 1px rgba(88, 166, 255, 0.4)); }
+  50% { fill: #58a6ff; filter: drop-shadow(0 0 6px rgba(88, 166, 255, 0.9)); }
+}
+
+@keyframes twinkleA {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; filter: drop-shadow(0 0 3px #ffffff); }
+}
+
+@keyframes twinkleB {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 2px #ffa657); }
+  50% { opacity: 0.35; }
+}
+
+@keyframes twinkleC {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; filter: drop-shadow(0 0 4px #a5d6ff); }
+}
+
+@keyframes scanlineMotion {
+  0% { transform: translateY(-150px); }
+  100% { transform: translateY(530px); }
+}
+
+@keyframes borderGlow {
+  0%, 100% { stroke: #30363d; stroke-width: 1px; }
+  50% { stroke: #58a6ff; stroke-width: 1.5px; filter: drop-shadow(0 0 4px rgba(88, 166, 255, 0.3)); }
+}
+
+.cursor {
+  animation: cursorBlink 1s infinite;
+  fill: #58a6ff;
+  font-weight: bold;
+}
+
+.prompt-title {
+  animation: promptGlow 4s ease-in-out infinite;
+}
+
+.twinkle-1 {
+  animation: twinkleA 2.5s ease-in-out infinite;
+}
+
+.twinkle-2 {
+  animation: twinkleB 3.2s ease-in-out infinite 0.8s;
+}
+
+.twinkle-3 {
+  animation: twinkleC 2.8s ease-in-out infinite 1.5s;
+}
+
+.card-bg {
+  animation: borderGlow 6s ease-in-out infinite;
+}
+
+.scanline {
+  animation: scanlineMotion 7s linear infinite;
+  pointer-events: none;
+}
+
+</style>
+
+<defs>
+  <clipPath id="cardClip">
+    <rect width="985px" height="530px" rx="15"/>
+  </clipPath>
+  <linearGradient id="scanlineGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="rgba(88, 166, 255, 0)" />
+    <stop offset="50%" stop-color="rgba(88, 166, 255, 0.07)" />
+    <stop offset="100%" stop-color="rgba(88, 166, 255, 0)" />
+  </linearGradient>
+</defs>
+<rect width="985px" height="530px" fill="#161b22" rx="15" stroke="#30363d" class="card-bg"/>
+<g clip-path="url(#cardClip)">
+  <rect class="scanline" x="0" y="0" width="985px" height="100px" fill="url(#scanlineGrad)"/>
+</g>
+<text x="15" y="30" fill="#c9d1d9">
+<tspan x="15" y="30">                                      </tspan>
+<tspan x="15" y="50">                                      </tspan>
+<tspan x="15" y="70">                                      </tspan>
+<tspan x="15" y="90"><tspan fill="#000000">@@@@@@@@@@@@@@@</tspan><tspan fill="#503603">m</tspan><tspan fill="#f4a301" class="twinkle-3">7</tspan><tspan fill="#ffaa00" class="twinkle-2">v</tspan><tspan fill="#916101">w</tspan><tspan fill="#a16c02">a</tspan><tspan fill="#ffaa00" class="twinkle-3">v</tspan><tspan fill="#f0a002">|</tspan><tspan fill="#452f03">D</tspan><tspan fill="#000000">@@@@@@@@@@@@@@@</tspan></tspan>
+<tspan x="15" y="110"><tspan fill="#000000">@@@@@@@@@</tspan><tspan fill="#161616">&amp;</tspan><tspan fill="#1b1b1b">Q</tspan><tspan fill="#1d1d1d">W</tspan><tspan fill="#1c1c1c">Q</tspan><tspan fill="#1b1b1b">Q</tspan><tspan fill="#4c3b1c">X</tspan><tspan fill="#fba801" class="twinkle-1">)</tspan><tspan fill="#ffaa00" class="twinkle-1">vv</tspan><tspan fill="#8a5b01">k</tspan><tspan fill="#9a6602">2</tspan><tspan fill="#ffaa00" class="twinkle-2">vv</tspan><tspan fill="#f7a501">J</tspan><tspan fill="#42351f">m</tspan><tspan fill="#1b1b1c">Q</tspan><tspan fill="#1d1d1f">W</tspan><tspan fill="#212129">M</tspan><tspan fill="#1e202b">N</tspan><tspan fill="#121214">@</tspan><tspan fill="#000000">@@@@@@@@@</tspan></tspan>
+<tspan x="15" y="130"><tspan fill="#000000">@@@@@@@@</tspan><tspan fill="#222222">M</tspan><tspan fill="#282828">g</tspan><tspan fill="#1d1c1d">W</tspan><tspan fill="#29272a">g</tspan><tspan fill="#2a2725">g</tspan><tspan fill="#2b2826">B</tspan><tspan fill="#312c2a">#</tspan><tspan fill="#906d2c">a</tspan><tspan fill="#faa600" class="twinkle-2">J</tspan><tspan fill="#ffaa00" class="twinkle-3">v</tspan><tspan fill="#764e02">4</tspan><tspan fill="#875901">P</tspan><tspan fill="#ffaa00" class="twinkle-1">v</tspan><tspan fill="#f7a501">J</tspan><tspan fill="#a77d44">e</tspan><tspan fill="#443d47">A</tspan><tspan fill="#26293a">B</tspan><tspan fill="#263153">R</tspan><tspan fill="#2c3356">8</tspan><tspan fill="#37426c">U</tspan><tspan fill="#374a7b">O</tspan><tspan fill="#1c2027">N</tspan><tspan fill="#000000">@@@@@@@@</tspan></tspan>
+<tspan x="15" y="150"><tspan fill="#000000">@@</tspan><tspan fill="#1e1502">&amp;</tspan><tspan fill="#754f03">4</tspan><tspan fill="#754f04">444</tspan><tspan fill="#6b4f1a">4</tspan><tspan fill="#2d2d2d">#</tspan><tspan fill="#222121">M</tspan><tspan fill="#262626">g</tspan><tspan fill="#38373a">m</tspan><tspan fill="#484646">G</tspan><tspan fill="#292525">g</tspan><tspan fill="#1e1d1c">W</tspan><tspan fill="#221f20">N</tspan><tspan fill="#a27827">5</tspan><tspan fill="#ea9c02">F</tspan><tspan fill="#815603">6</tspan><tspan fill="#976504">E</tspan><tspan fill="#ea9c04">F</tspan><tspan fill="#9c7533">Y</tspan><tspan fill="#704741">d</tspan><tspan fill="#835346">k</tspan><tspan fill="#6a4d51">9</tspan><tspan fill="#665963">k</tspan><tspan fill="#664e49">9</tspan><tspan fill="#7c5953">w</tspan><tspan fill="#866962">y</tspan><tspan fill="#987a6e">e</tspan><tspan fill="#6a4c11">V</tspan><tspan fill="#744e03">444</tspan><tspan fill="#724d03">V</tspan><tspan fill="#150e01">@</tspan><tspan fill="#000000">@@</tspan></tspan>
+<tspan x="15" y="170"><tspan fill="#000000">@</tspan><tspan fill="#332202">0</tspan><tspan fill="#e59902">{</tspan><tspan fill="#ffaa00" class="twinkle-2">vvvvv</tspan><tspan fill="#ae7e22">e</tspan><tspan fill="#333030">D</tspan><tspan fill="#242223">M</tspan><tspan fill="#272323">0</tspan><tspan fill="#1f1c1c">W</tspan><tspan fill="#1a1818">%</tspan><tspan fill="#201f1f">N</tspan><tspan fill="#916e2c">y</tspan><tspan fill="#fba701" class="twinkle-1">)</tspan><tspan fill="#ffaa00" class="twinkle-3">v</tspan><tspan fill="#885b02">k</tspan><tspan fill="#a97102">x</tspan><tspan fill="#ffaa00" class="twinkle-1">v</tspan><tspan fill="#f5a402" class="twinkle-2">7</tspan><tspan fill="#836534">E</tspan><tspan fill="#3b2b2e">D</tspan><tspan fill="#583535">A</tspan><tspan fill="#553129">X</tspan><tspan fill="#60362b">A</tspan><tspan fill="#804b40">6</tspan><tspan fill="#7d4d46">6</tspan><tspan fill="#c78a20">1</tspan><tspan fill="#ffaa00" class="twinkle-2">vvvvv</tspan><tspan fill="#db9202">f</tspan><tspan fill="#261a02">Q</tspan><tspan fill="#000000">@</tspan></tspan>
+<tspan x="15" y="190"><tspan fill="#0a0701">@</tspan><tspan fill="#df9602">C</tspan><tspan fill="#ffaa00" class="twinkle-3">vvvvvvv</tspan><tspan fill="#ab7819">Z</tspan><tspan fill="#a07421">Y</tspan><tspan fill="#a07523">Y</tspan><tspan fill="#9d711f">j</tspan><tspan fill="#986e1b">y</tspan><tspan fill="#9f721c">x</tspan><tspan fill="#fda900">)</tspan><tspan fill="#ffaa00" class="twinkle-1">vv</tspan><tspan fill="#885b02">k</tspan><tspan fill="#a97102">x</tspan><tspan fill="#ffaa00" class="twinkle-2">vv</tspan><tspan fill="#f5a401">7</tspan><tspan fill="#956c23">a</tspan><tspan fill="#a97524">5</tspan><tspan fill="#a67320">Y</tspan><tspan fill="#ab7522">5</tspan><tspan fill="#b17824">o</tspan><tspan fill="#b98017">n</tspan><tspan fill="#ffaa00" class="twinkle-3">vvvvvvv</tspan><tspan fill="#d08c02">1</tspan><tspan fill="#040301">@</tspan></tspan>
+<tspan x="15" y="210"><tspan fill="#000000">@</tspan><tspan fill="#271901">Q</tspan><tspan fill="#db9201">f</tspan><tspan fill="#ffaa00" class="twinkle-1">vvvv</tspan><tspan fill="#fea900" class="twinkle-3">)</tspan><tspan fill="#cb8603">l</tspan><tspan fill="#f5a301">7</tspan><tspan fill="#ffaa00" class="twinkle-2">vvvv</tspan><tspan fill="#fda900">)</tspan><tspan fill="#d18b03">1</tspan><tspan fill="#f8a501">J</tspan><tspan fill="#ffaa00" class="twinkle-3">v</tspan><tspan fill="#885b02">k</tspan><tspan fill="#a97102">x</tspan><tspan fill="#ffaa00" class="twinkle-1">v</tspan><tspan fill="#ef9f00">|</tspan><tspan fill="#c78403">u</tspan><tspan fill="#feaa00">v</tspan><tspan fill="#ffaa00" class="twinkle-2">vvvv</tspan><tspan fill="#f1a101">(</tspan><tspan fill="#d28b03">1</tspan><tspan fill="#ffaa00" class="twinkle-3">vvvvv</tspan><tspan fill="#d18b01">1</tspan><tspan fill="#1e1301">@</tspan><tspan fill="#000000">@</tspan></tspan>
+<tspan x="15" y="230"><tspan fill="#000000">@@</tspan><tspan fill="#3e2902">$</tspan><tspan fill="#e99c02">FFFF</tspan><tspan fill="#c48204">[</tspan><tspan fill="#f2a101">(</tspan><tspan fill="#ffaa00" class="twinkle-1">vvvvvv</tspan><tspan fill="#fda900">)</tspan><tspan fill="#754d02">4</tspan><tspan fill="#644201">b</tspan><tspan fill="#352301">0</tspan><tspan fill="#422c01">#</tspan><tspan fill="#644201">b</tspan><tspan fill="#774f02">d</tspan><tspan fill="#feaa00">v</tspan><tspan fill="#ffaa00" class="twinkle-2">vvvvvv</tspan><tspan fill="#ed9e02">|</tspan><tspan fill="#d08a04">1</tspan><tspan fill="#ed9f03">|||</tspan><tspan fill="#eb9d03" class="twinkle-2">F</tspan><tspan fill="#2f1f02">N</tspan><tspan fill="#000000">@@</tspan></tspan>
+<tspan x="15" y="250"><tspan fill="#000000">@</tspan><tspan fill="#402b03">#</tspan><tspan fill="#ed9e02">|</tspan><tspan fill="#ffaa00" class="twinkle-3">vvvvv</tspan><tspan fill="#d48d04">3</tspan><tspan fill="#ed9d01">F</tspan><tspan fill="#ffaa00" class="twinkle-1">vvvv</tspan><tspan fill="#f6a400">7</tspan><tspan fill="#573901">X</tspan><tspan fill="#000000">@@@@@@</tspan><tspan fill="#664301">b</tspan><tspan fill="#faa700">J</tspan><tspan fill="#ffaa00" class="twinkle-2">vvvv</tspan><tspan fill="#ec9d01">F</tspan><tspan fill="#dd9303">}</tspan><tspan fill="#ffaa00" class="twinkle-3">vvvvv</tspan><tspan fill="#e69a02">i</tspan><tspan fill="#342302">0</tspan><tspan fill="#000000">@</tspan></tspan>
+<tspan x="15" y="270"><tspan fill="#0a0701">@</tspan><tspan fill="#dd9402">}</tspan><tspan fill="#ffaa00" class="twinkle-1">vvvvvvv</tspan><tspan fill="#c28004">[</tspan><tspan fill="#ed9e03">||||</tspan><tspan fill="#906003">w</tspan><tspan fill="#010000">@</tspan><tspan fill="#000000">@@@@@@@</tspan><tspan fill="#5c4620">G</tspan><tspan fill="#84601f">w</tspan><tspan fill="#8c6929">]</tspan><tspan fill="#856223">S</tspan><tspan fill="#836020">w</tspan><tspan fill="#aa791e">Z</tspan><tspan fill="#ffaa00" class="twinkle-2">vvvvvvv</tspan><tspan fill="#cd8a02">t</tspan><tspan fill="#040301">@</tspan></tspan>
+<tspan x="15" y="290"><tspan fill="#000000">@</tspan><tspan fill="#1d1301">@</tspan><tspan fill="#d08b01">1</tspan><tspan fill="#ffaa00" class="twinkle-3">vvvv</tspan><tspan fill="#fba700">J</tspan><tspan fill="#cd8804">t</tspan><tspan fill="#faa701">J</tspan><tspan fill="#ffaa00" class="twinkle-1">vvvvv</tspan><tspan fill="#8e5f03">w</tspan><tspan fill="#030200">@</tspan><tspan fill="#000000">@@@@</tspan><tspan fill="#020202">@</tspan><tspan fill="#393736">m</tspan><tspan fill="#251d16">W</tspan><tspan fill="#282220">0</tspan><tspan fill="#3b373b">H</tspan><tspan fill="#231d19">W</tspan><tspan fill="#19130f">@</tspan><tspan fill="#201b18">Q</tspan><tspan fill="#9b7122">j</tspan><tspan fill="#fda900">)</tspan><tspan fill="#ffaa00" class="twinkle-2">vvvv</tspan><tspan fill="#c38101">[</tspan><tspan fill="#140d00">@</tspan><tspan fill="#000000">@</tspan></tspan>
+<tspan x="15" y="310"><tspan fill="#000000">@@</tspan><tspan fill="#282219">M</tspan><tspan fill="#6c4e1a">4</tspan><tspan fill="#6f4d18">4</tspan><tspan fill="#724e19">d</tspan><tspan fill="#6e4d19">4</tspan><tspan fill="#715423">h</tspan><tspan fill="#efa105">(</tspan><tspan fill="#ffaa00" class="twinkle-3">vvvvvv</tspan><tspan fill="#dc9301">}</tspan><tspan fill="#503603">m</tspan><tspan fill="#9b6802">222</tspan><tspan fill="#986602">2</tspan><tspan fill="#433928">H</tspan><tspan fill="#302f36">D</tspan><tspan fill="#333239">R</tspan><tspan fill="#27262d">g</tspan><tspan fill="#161313">@</tspan><tspan fill="#272630">g</tspan><tspan fill="#201f27">N</tspan><tspan fill="#151620">&amp;</tspan><tspan fill="#35343b">8</tspan><tspan fill="#d49314">f</tspan><tspan fill="#ed9f03">|||</tspan><tspan fill="#ea9d03">F</tspan><tspan fill="#302002">M</tspan><tspan fill="#000000">@@</tspan></tspan>
+<tspan x="15" y="330"><tspan fill="#000000">@</tspan><tspan fill="#262121">M</tspan><tspan fill="#331d1b">0</tspan><tspan fill="#4c2824">R</tspan><tspan fill="#8b6e70">x</tspan><tspan fill="#826b70">y</tspan><tspan fill="#4d2d28">8</tspan><tspan fill="#180a0b">@</tspan><tspan fill="#524028">U</tspan><tspan fill="#e59c0b">i</tspan><tspan fill="#ffaa00" class="twinkle-1">vvvv</tspan><tspan fill="#c78401">u</tspan><tspan fill="#644303">b</tspan><tspan fill="#f3a301">7</tspan><tspan fill="#ffaa00" class="twinkle-2">vvvv</tspan><tspan fill="#e59901">{</tspan><tspan fill="#513f1e">A</tspan><tspan fill="#252321">0</tspan><tspan fill="#161412">@</tspan><tspan fill="#100d0c">@</tspan><tspan fill="#0c0a08">@</tspan><tspan fill="#151312">@</tspan><tspan fill="#473f32">A</tspan><tspan fill="#da9916">{</tspan><tspan fill="#ffaa00" class="twinkle-3">vvvvv</tspan><tspan fill="#ec9e01">F</tspan><tspan fill="#3f2a02">$</tspan><tspan fill="#000000">@</tspan></tspan>
+<tspan x="15" y="350"><tspan fill="#0a0a0a">@</tspan><tspan fill="#3d2b2a">D</tspan><tspan fill="#371810">N</tspan><tspan fill="#734c4d">h</tspan><tspan fill="#a7b3ca">T</tspan><tspan fill="#878baa">t</tspan><tspan fill="#95828a">u</tspan><tspan fill="#50231c">D</tspan><tspan fill="#281210">%</tspan><tspan fill="#916b29">a</tspan><tspan fill="#eb9d03" class="twinkle-3">FFF</tspan><tspan fill="#946203">S</tspan><tspan fill="#563904">X</tspan><tspan fill="#f1a101">(</tspan><tspan fill="#ffaa00" class="twinkle-1">vvvvvv</tspan><tspan fill="#e69a02">i</tspan><tspan fill="#483512">m</tspan><tspan fill="#765618">h</tspan><tspan fill="#b98317">[</tspan><tspan fill="#b98216">[</tspan><tspan fill="#b88216">[</tspan><tspan fill="#c0830f">u</tspan><tspan fill="#ffaa00" class="twinkle-2">vvvvvvv</tspan><tspan fill="#be8002">n</tspan><tspan fill="#020200">@</tspan></tspan>
+<tspan x="15" y="370"><tspan fill="#000000">@</tspan><tspan fill="#0d0d0d">@</tspan><tspan fill="#2c2727">B</tspan><tspan fill="#190f0d">@</tspan><tspan fill="#391f18">g</tspan><tspan fill="#633d36">G</tspan><tspan fill="#512822">R</tspan><tspan fill="#3a1f1a">g</tspan><tspan fill="#9a7024">j</tspan><tspan fill="#fda901">)</tspan><tspan fill="#ffaa00" class="twinkle-3">vv</tspan><tspan fill="#7c5101">9</tspan><tspan fill="#654303">b</tspan><tspan fill="#faa701">J</tspan><tspan fill="#d68e03">I</tspan><tspan fill="#ed9e01">F</tspan><tspan fill="#ffaa00" class="twinkle-1">vvvv</tspan><tspan fill="#eb9c01">F</tspan><tspan fill="#dc9303">}</tspan><tspan fill="#f1a101">(</tspan><tspan fill="#4e3402">m</tspan><tspan fill="#9a6501">2</tspan><tspan fill="#ffaa00" class="twinkle-2">vv</tspan><tspan fill="#f9a601">J</tspan><tspan fill="#c98504">l</tspan><tspan fill="#fba700">J</tspan><tspan fill="#ffaa00" class="twinkle-3">vvvv</tspan><tspan fill="#ab7201">x</tspan><tspan fill="#0a0600">@</tspan><tspan fill="#000000">@</tspan></tspan>
+<tspan x="15" y="390"><tspan fill="#000000">@@</tspan><tspan fill="#060606">@</tspan><tspan fill="#161616">&amp;</tspan><tspan fill="#161515">@</tspan><tspan fill="#171414">@</tspan><tspan fill="#161414">@</tspan><tspan fill="#2c2213">M</tspan><tspan fill="#e29701">C</tspan><tspan fill="#ffaa00" class="twinkle-1">v</tspan><tspan fill="#fda800">)</tspan><tspan fill="#794f02">d</tspan><tspan fill="#9d6903">]</tspan><tspan fill="#ffaa00" class="twinkle-2">vv</tspan><tspan fill="#f6a402">7</tspan><tspan fill="#80612b">w</tspan><tspan fill="#5e471f">O</tspan><tspan fill="#5c461e">G</tspan><tspan fill="#5e4821">O</tspan><tspan fill="#5c451e">G</tspan><tspan fill="#886525">E</tspan><tspan fill="#fba700">J</tspan><tspan fill="#ffaa00" class="twinkle-3">v</tspan><tspan fill="#fea900" class="twinkle-1">)</tspan><tspan fill="#875a03">P</tspan><tspan fill="#8e5d01">q</tspan><tspan fill="#ffaa00" class="twinkle-1">vv</tspan><tspan fill="#d89001">I</tspan><tspan fill="#362301">0</tspan><tspan fill="#382600">gg</tspan><tspan fill="#382500">g</tspan><tspan fill="#362400">0</tspan><tspan fill="#020100">@</tspan><tspan fill="#000000">@@</tspan></tspan>
+<tspan x="15" y="410"><tspan fill="#000000">@@@@@@@@</tspan><tspan fill="#1c1200">@</tspan><tspan fill="#c48301">[</tspan><tspan fill="#634102">U</tspan><tspan fill="#ba7d02">e</tspan><tspan fill="#ffaa00" class="twinkle-2">vv</tspan><tspan fill="#eea007">|</tspan><tspan fill="#68532f">9</tspan><tspan fill="#201b1a">W</tspan><tspan fill="#231d1e">N</tspan><tspan fill="#2a2428">g</tspan><tspan fill="#75636a">E</tspan><tspan fill="#53464d">O</tspan><tspan fill="#231f21">N</tspan><tspan fill="#775d2e">k</tspan><tspan fill="#f3a302">7</tspan><tspan fill="#ffaa00" class="twinkle-3">vv</tspan><tspan fill="#a56f03">j</tspan><tspan fill="#724b01">V</tspan><tspan fill="#be7f01">n</tspan><tspan fill="#140d00">@</tspan><tspan fill="#000000">@@@@@@@@</tspan></tspan>
+<tspan x="15" y="430"><tspan fill="#000000">@@@@@@@@@@</tspan><tspan fill="#170f01">@</tspan><tspan fill="#312001">MM</tspan><tspan fill="#302001">M</tspan><tspan fill="#322a1c">$</tspan><tspan fill="#262424">0</tspan><tspan fill="#4d4249">b</tspan><tspan fill="#80696e">y</tspan><tspan fill="#433842">X</tspan><tspan fill="#7d6269">2</tspan><tspan fill="#705760">k</tspan><tspan fill="#3e2b2f">D</tspan><tspan fill="#272627">g</tspan><tspan fill="#322816">B</tspan><tspan fill="#342201">000</tspan><tspan fill="#130d01">@</tspan><tspan fill="#010000">@</tspan><tspan fill="#000000">@@@@@@@@@</tspan></tspan>
+<tspan x="15" y="450"><tspan fill="#000000">@@@@@@@@@@@@@@@</tspan><tspan fill="#171617">&amp;</tspan><tspan fill="#2c2a2a">$</tspan><tspan fill="#161414">@</tspan><tspan fill="#191819">%</tspan><tspan fill="#403a3d">X</tspan><tspan fill="#444043">A</tspan><tspan fill="#2a2a2b">B</tspan><tspan fill="#101010">@</tspan><tspan fill="#000000">@@@@@@@@@@@@@@@</tspan></tspan>
+<tspan x="15" y="470">                                      </tspan>
+<tspan x="15" y="490">                                      </tspan>
+<tspan x="15" y="510">                                      </tspan>
+</text>
+<text x="390" y="30" fill="#c9d1d9">
+<tspan x="390" y="30" class="prompt-title">studentofstars@github</tspan><tspan class="cursor"> █</tspan><tspan> -——————————————————————————————————-—-</tspan>
+<tspan x="390" y="50" class="cc">. </tspan><tspan class="key">Name</tspan>:<tspan class="cc"> ................................. </tspan><tspan class="value">Mrutyunjaya Muduli</tspan>
+<tspan x="390" y="70" class="cc">. </tspan><tspan class="key">Role</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">Undergraduate Student</tspan>
+<tspan x="390" y="90" class="cc">. </tspan><tspan class="key">Created</tspan>:<tspan class="cc"> ...................................... </tspan><tspan class="value">2024-05-14</tspan>
+<tspan x="390" y="110" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">2 years, 3 months, 9 days</tspan>
+<tspan x="390" y="130" class="cc">. </tspan>
+<tspan x="390" y="150">- Research</tspan><tspan> -—————————————————————————————————————————————-—-</tspan>
+<tspan x="390" y="170" class="cc">. </tspan><tspan class="key">Focus</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">ML, Image Processing</tspan>
+<tspan x="390" y="190" class="cc">. </tspan><tspan class="key">Current</tspan>:<tspan class="cc"> ................................... </tspan><tspan class="value">Code + Cosmos</tspan>
+<tspan x="390" y="210" class="cc">. </tspan><tspan class="key">Portfolio</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">mrutyunjayaportfolio.vercel.app</tspan>
+<tspan x="390" y="230" class="cc">. </tspan>
+<tspan x="390" y="250">- Stack</tspan><tspan> -————————————————————————————————————————————————-—-</tspan>
+<tspan x="390" y="270" class="cc">. </tspan><tspan class="key">Languages</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">Python, Jupyter Notebook, HTML, TypeScript</tspan>
+<tspan x="390" y="290" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">VSCode, Jupyter, Colab</tspan>
+<tspan x="390" y="310" class="cc">. </tspan><tspan class="key">Tools</tspan>:<tspan class="cc"> ........................................ </tspan><tspan class="value">Git, Linux</tspan>
+<tspan x="390" y="330" class="cc">. </tspan>
+<tspan x="390" y="350">- About &amp; Contact</tspan><tspan> -——————————————————————————————————————-—-</tspan>
+<tspan x="390" y="370" class="cc">. </tspan><tspan class="key">Interests</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">Astronomy, Space Tech, Cycling</tspan>
+<tspan x="390" y="390" class="cc">. </tspan><tspan class="key">Email</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="value">mudulimrutyunjaya42@gmail.com</tspan>
+<tspan x="390" y="410" class="cc">. </tspan>
+<tspan x="390" y="430">- GitHub Stats</tspan><tspan> -—————————————————————————————————————————-—-</tspan>
+<tspan x="390" y="450" class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ....................... </tspan><tspan class="value">19</tspan> | <tspan class="key">Stars</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">3</tspan>
+<tspan x="390" y="470" class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> .................... </tspan><tspan class="value">950</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">5</tspan>
+<tspan x="390" y="490" class="cc">. </tspan><tspan class="key">Lines of Code</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">38,300</tspan> ( <tspan class="addColor">45,960</tspan><tspan class="addColor">++</tspan>,  <tspan class="delColor">7,660</tspan><tspan class="delColor">--</tspan> )
+</text>
+</svg>
