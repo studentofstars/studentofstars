@@ -1,0 +1,73 @@
+{
+  "sections": [
+    {
+      "title": "{{username}}@github",
+      "fields": [
+        { "key": "Name", "value": "Mrutyunjaya Muduli" },
+        { "key": "Role", "value": "Undergraduate Student" },
+        { "key": "Location", "value": "{{location}}" },
+        { "key": "Created", "value": "{{created}}" },
+        { "key": "Uptime", "value": "{{uptime}}" },
+        { "key": "Company", "value": "{{company}}" }
+      ]
+    },
+    {
+      "title": "- Research & Learning",
+      "fields": [
+        { "key": "Focus", "value": "Machine Learning, Image Processing" },
+        { "key": "Current", "value": "Studying the universe through code" },
+        { "key": "Ask.Me", "value": "Code and Cosmos" },
+        { "key": "Portfolio", "value": "mrutyunjayaportfolio.vercel.app" }
+      ]
+    },
+    {
+      "title": "- Stack",
+      "fields": [
+        { "key": "Languages", "value": "{{languages}}" },
+        { "key": "IDE", "value": "VSCode, Jupyter, Colab" },
+        { "key": "Tools", "value": "Git, Linux, OpenCV, NumPy, Pandas" }
+      ]
+    },
+    {
+      "title": "- Hobbies",
+      "fields": [
+        { "key": "Creative", "value": "Painting" },
+        { "key": "Outdoor", "value": "Cycling" },
+        { "key": "Interests", "value": "Astronomy, Space Tech, Data Visualization" }
+      ]
+    },
+    {
+      "title": "- Contact",
+      "fields": [
+        { "key": "Email", "value": "mudulimrutyunjaya42@gmail.com" },
+        { "key": "Website", "value": "https://mrutyunjayaportfolio.vercel.app/?v=2" },
+        { "key": "LinkedIn", "value": "https://www.linkedin.com/in/mrutyunjaya-muduli-8a124a257/" }
+      ]
+    }
+  ],
+  "stats": {
+    "title": "- GitHub Stats",
+    "rows": [
+      {
+        "left": { "key": "Repos", "value": "{{repos}}" },
+        "right": { "key": "Stars", "value": "{{stars}}" }
+      },
+      {
+        "left": { "key": "Following", "value": "{{following}}" },
+        "right": { "key": "Followers", "value": "{{followers}}" }
+      },
+      {
+        "left": { "key": "Commits", "value": "{{commits}}" },
+        "right": { "key": "Forks", "value": "{{forks}}" }
+      },
+      {
+        "left": { "key": "Issues", "value": "{{issues}}" },
+        "right": { "key": "PRs", "value": "{{prs}}" }
+      },
+      {
+        "left": { "key": "LOC", "value": "{{loc}}" },
+        "right": { "key": "Contrib", "value": "{{contributions}}" }
+      }
+    ]
+  }
+}
