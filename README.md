@@ -10,10 +10,6 @@
     media="(prefers-color-scheme: dark)"
     srcset="https://neofetch-profile.vercel.app/api?username=studentofstars&theme=github-dark&config=https%3A%2F%2Fraw.githubusercontent.com%2Fstudentofstars%2Fstudentofstars%2Fmain%2Fneofetch.json"
   />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://neofetch-profile.vercel.app/api?username=studentofstars&theme=github-light&config=https%3A%2F%2Fraw.githubusercontent.com%2Fstudentofstars%2Fstudentofstars%2Fmain%2Fneofetch.json"
-  />
   <img
     alt="Neofetch style GitHub profile card"
     src="https://neofetch-profile.vercel.app/api?username=studentofstars&theme=github-dark&config=https%3A%2F%2Fraw.githubusercontent.com%2Fstudentofstars%2Fstudentofstars%2Fmain%2Fneofetch.json"
