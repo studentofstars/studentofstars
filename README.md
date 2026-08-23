@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **machine learning and image processing**
 
-- 👨‍💻 All of my projects are available at [https://mrutyunjayaportfolio.vercel.app/?v=2](https://mrutyunjayaportfolio.vercel.app/?v=2)
+- 👨‍💻 All of my projects are available at [My_CV]([https://mrutyunjayaportfolio.vercel.app/?v=2](https://mrutyunjayaportfolio.vercel.app/assets/Mrutyunjaya_Muduli_Curriculum_Vitae.pdf))
 
 - 💬 Ask me about **code and cosmos**
 
