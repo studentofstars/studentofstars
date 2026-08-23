@@ -8,11 +8,11 @@
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://neofetch-profile.vercel.app/api?username=studentofstars&theme=github-dark&config=https%3A%2F%2Fraw.githubusercontent.com%2Fstudentofstars%2Fstudentofstars%2Fmain%2Fneofetch.json"
+    srcset="https://neofetch-profile.vercel.app/api?username=studentofstars&theme=github-dark&config=https%3A%2F%2Fraw.githubusercontent.com%2Fstudentofstars%2Fstudentofstars%2Fmain%2Fneofetch.json&v=2"
   />
   <img
     alt="Neofetch style GitHub profile card"
-    src="https://neofetch-profile.vercel.app/api?username=studentofstars&theme=github-dark&config=https%3A%2F%2Fraw.githubusercontent.com%2Fstudentofstars%2Fstudentofstars%2Fmain%2Fneofetch.json"
+    src="https://neofetch-profile.vercel.app/api?username=studentofstars&theme=github-dark&config=https%3A%2F%2Fraw.githubusercontent.com%2Fstudentofstars%2Fstudentofstars%2Fmain%2Fneofetch.json&v=2"
   />
 </picture>
 
