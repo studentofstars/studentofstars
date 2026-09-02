@@ -13,7 +13,7 @@
 - 👨‍💻 All of my projects are available at [mrutyunjayaportfolio.vercel.app](https://mrutyunjayaportfolio.vercel.app/?v=2)
 - 💬 Ask me about **code and cosmos**
 - 📫 How to reach me **mudulimrutyunjaya42@gmail.com**
-- 📄 Know about my experiences [View CV](https://mrutyunjayaportfolio.vercel.app/assets/Mrutyunjaya_Muduli_CV.pdf?v=2025)
+- 📄 Know about my experiences [View CV](https://mrutyunjayaportfolio.vercel.app/assets/Mrutyunjaya_Muduli_Curriculum_Vitae.pdf)
 
 <h3 align="left">Connect with me:</h3>
 
